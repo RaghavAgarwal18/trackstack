@@ -205,3 +205,22 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# === Node.js / React (frontend) ===
+node_modules/
+dist/
+build/
+
+# === Local environment files ===
+.env
+.env.*.local
+
+# === SQLite database (local dev only) ===
+trackstack.db
+
+# === Docker ===
+db_data/
+
+# === OS clutter ===
+.DS_Store
+Thumbs.db
