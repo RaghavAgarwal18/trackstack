@@ -1,8 +1,8 @@
 import pandas as pd
 from sqlalchemy import select
 from sqlalchemy.orm import Session
-from .database import SessionLocal, init_db
-from .models import Artist, Track, PlayHistory
+from .database import SessionLocal, init_db          # <- single dot
+from .models import Artist, Track, PlayHistory       # <- single dot
 from datetime import datetime
 
 def upsert_artist(db: Session, name: str) -> int:

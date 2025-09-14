@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import String, Integer, ForeignKey, DateTime
 from .database import Base
+from datetime import datetime  # 👈 add this import
 
 class Artist(Base):
     __tablename__ = "artists"
@@ -21,4 +22,4 @@ class PlayHistory(Base):
     __tablename__ = "play_history"
     user_id: Mapped[int] = mapped_column(primary_key=True)
     track_id: Mapped[int] = mapped_column(primary_key=True)
-    played_at: Mapped[DateTime] = mapped_column(primary_key=True)
+    played_at: Mapped[datetime] = mapped_column(DateTime, primary_key=True) 

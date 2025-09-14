@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .database import init_db
+from ..database import init_db
 
 app = FastAPI(title="TrackStack API", version="0.1.0")
 
